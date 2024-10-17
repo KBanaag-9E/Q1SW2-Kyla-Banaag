@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<!-- NOTE: I didn't put paragraph tags because it was mentioned in class that we don't have to use them in this seatwork -->
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Page</title>
+<!-- Links to Google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+<!-- Internal CSS -->
+<style type="text/css">
+
+	body {
+		background-color: #C9E4CA;
+    	color: #3B6064;
+		font-family: "Nerko One", cursive;
+/*		margin-left: 20%;
+		margin-right: 20%;*/
+	}
+	.header {
+		text-align: center;
+		padding: 5px;
+		background-color: #3B6064;
+		color: #87BBA2;
+	}
+	.container {
+		max-width: 400px;
+		margin: 50px auto;
+		padding: 15px;
+		background: #87BBA2;
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+	.container h1 {
+		text-align: center;
+	}
+	.container input[type="text"],
+	.container input[type="password"],
+	.container input[type="file"] {
+		width: 95%;
+		padding: 10px;
+		margin: 10px 0;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		font-family: 'Courier New', Courier, monospace;
+	}
+	.container input[type="submit"] {
+		width: 100%;
+		padding: 10px;
+		background: #3B6064;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background 0.5s ease; 
+	}
+	.container input[type="submit"]:hover {
+		background: #4B7B81;
+	}
+	.footer {
+		text-align: center;
+	}
+	.logo {
+		display: block; 
+		margin: 30px auto; 
+		width: 150px; 
+		height: auto; 
+		border-radius: 50%; 
+		object-fit: cover;
+	}
+
+</style>
+
+</head>
+<body>
+	<div class="header">
+		<h1>Create <span style="color: white;">Your</span> Account</h1>
+	</div>
+	<div class="container">   
+		<h1>Sign Up</h1>
+		<img id="profileImage" src="https://i.pinimg.com/originals/60/07/0e/60070ed889df308cbe80253e8c36b3a3.jpg" class="logo"> 
+		<form id="loginForm">
+			<input type="text" name="username" placeholder="Username" required>
+			<input type="password" id="passwordInput" name="password" placeholder="Password" required> 
+			<input type="submit" value="Create Account">
+		</form>
+	</div>
+
+	<div class="footer">
+		<h3>Kyla Limuelle J. Banaag | 9-Emerald</h3>
+	</div>
+
+</body>
+</html>
